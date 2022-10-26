@@ -4,7 +4,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "ENV=development IP_ADDRESS=$(ipconfig getifaddr en0) expo start --dev-client",
-    "build:android:device": "ENV=development eas build --platform android --profile development"
+    "build:android:device": "ENV=development eas build --platform android --profile development",
+    "postinstall": "npx patch-package"
   },
   "dependencies": {
     "@types/react": "~18.0.0",
